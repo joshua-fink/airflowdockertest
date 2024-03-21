@@ -1,5 +1,5 @@
 # Airflow / Docker Test
-Defined first DAG inside 'dags/my_dag.py' and ran it successfully in Docker Container
+Defined first DAG inside 'dags/my_dag.py' and ran it successfully in Docker Container on personal Windows PC
 
 ### Helpful Tutorials
 After running into a few dead ends, these YouTube videos ended up being the most helpful:
