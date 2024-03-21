@@ -34,3 +34,4 @@ postgres - The database.
 redis - The redis - broker that forwards messages from scheduler to worker.
 
 
+![image](https://github.com/joshua-fink/airflowdockertest/assets/49216284/02b07ee2-0d8b-489d-9084-c078138b2d7c)
