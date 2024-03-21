@@ -4,8 +4,8 @@ Defined first DAG inside 'my_dag.py' and ran it successfully in Docker Container
 ### Helpful Tutorials
 After running into a few dead ends, these YouTube videos ended up being the most helpful:
 <ul>
-  <li>[How to Install Apache Airflow on Windows using Docker Container](https://www.youtube.com/watch?v=4gz9SogFh1Q)
-  <li>[Airflow DAG: Coding your first DAG for Beginners](https://www.youtube.com/watch?v=IH1-0hwFZRQ) </li>
+  <li> How to Install Apache Airflow on Windows using Docker Container (https://www.youtube.com/watch?v=4gz9SogFh1Q)
+  <li> Airflow DAG: Coding your first DAG for Beginners (https://www.youtube.com/watch?v=IH1-0hwFZRQ) </li>
 </ul>
 
 #### Comments from How to Install Apache Airflow on Windows using Docker Container video (very helpful)
