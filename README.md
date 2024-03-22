@@ -9,7 +9,7 @@ By Joshua Fink (joshuafink@geico.com)
 
 <ul>
   <li> Figured out how to audit logs to find where statements in tasks were printed
-  <li> Completed the 'Fundamental Concepts' tutorial in Airflow documentation </li>
+  <li> Completed the 'Fundamental Concepts' tutorial in Airflow documentation ('dags/fundamental_concepts.py') </li>
   <li> Created DAG to test TaskFlow API for Docker in 'dags/taskflow_api.py' </li>
   <li> Learned how to share tasks between DAGS in same file ('dags/reuse_task_in_multiple_dags.py') and share tasks between files ('dags/use_task_in_other_file.py') </li>
   <li> Learned how to extend enviroment using 'Dockerfile', 'requirements.txt' to allow DAG to use 'pyjokes' package </li>
