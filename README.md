@@ -1,4 +1,31 @@
 # Airflow / Docker Test
+By Joshua Fink (joshuafink@geico.com)
+
+## 3/21/24: More DAGS, First Connection Fail
+
+### Successes
+
+**New: Use 'docker compose build' to run Dockerfile with extra Python packages**
+
+<ul>
+  <li> Figured out how to audit logs to find where statements in tasks were printed
+  <li> Completed the 'Fundamental Concepts' tutorial in Airflow documentation </li>
+  <li> Created DAG to test TaskFlow API for Docker in 'dags/taskflow_api.py' </li>
+  <li> Learned how to share tasks between DAGS in same file ('dags/reuse_task_in_multiple_dags.py') and share tasks between files ('dags/use_task_in_other_file.py') </li>
+  <li> Learned how to extend enviroment using 'Dockerfile', 'requirements.txt' to allow DAG to use 'pyjokes' package </li>
+  <li> Learned how to create virtual environment local to task with 'randfacts' package in 'dags/testing_virtual_envs.py' </li>
+</ul>
+
+### Current Difficulties
+
+<ul>
+  <li> Tried to follow tutorial on Connections in Airflow docs to set up Calendarific API via Airflow UI. Then tried running in via 'dags/test_calendarific.py'. A bit confused on how to properly set it up. Theory is permissions of account in Docker Container may not be configured properly. </li>
+  <li> Currently, 'dags/test_calendarific.py' runs a test using 'HttpSensor()' operator to test if connection is active. DAG fails instead :( </li>
+</ul>
+
+
+
+## 3/20/24: Initial Setup
 Defined first DAG inside 'dags/my_dag.py' and ran it successfully in Docker Container on personal Windows PC
 
 ### Helpful Tutorials
