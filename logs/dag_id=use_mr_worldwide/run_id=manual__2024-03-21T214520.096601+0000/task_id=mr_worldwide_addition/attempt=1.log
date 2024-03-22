@@ -1,0 +1,14 @@
+[2024-03-21T21:45:21.908+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: use_mr_worldwide.mr_worldwide_addition manual__2024-03-21T21:45:20.096601+00:00 [queued]>
+[2024-03-21T21:45:21.918+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: use_mr_worldwide.mr_worldwide_addition manual__2024-03-21T21:45:20.096601+00:00 [queued]>
+[2024-03-21T21:45:21.919+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-03-21T21:45:21.937+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonDecoratedOperator): mr_worldwide_addition> on 2024-03-21 21:45:20.096601+00:00
+[2024-03-21T21:45:21.944+0000] {standard_task_runner.py:60} INFO - Started process 87 to run task
+[2024-03-21T21:45:21.948+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'use_mr_worldwide', 'mr_worldwide_addition', 'manual__2024-03-21T21:45:20.096601+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/use_task_in_other_file.py', '--cfg-path', '/tmp/tmpig364pug']
+[2024-03-21T21:45:21.952+0000] {standard_task_runner.py:88} INFO - Job 68: Subtask mr_worldwide_addition
+[2024-03-21T21:45:22.005+0000] {task_command.py:423} INFO - Running <TaskInstance: use_mr_worldwide.mr_worldwide_addition manual__2024-03-21T21:45:20.096601+00:00 [running]> on host d2feb6af224b
+[2024-03-21T21:45:22.105+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='use_mr_worldwide' AIRFLOW_CTX_TASK_ID='mr_worldwide_addition' AIRFLOW_CTX_EXECUTION_DATE='2024-03-21T21:45:20.096601+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-21T21:45:20.096601+00:00'
+[2024-03-21T21:45:22.109+0000] {logging_mixin.py:188} INFO - Task args: x=1, y=2
+[2024-03-21T21:45:22.109+0000] {python.py:201} INFO - Done. Returned value was: 3
+[2024-03-21T21:45:22.134+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=use_mr_worldwide, task_id=mr_worldwide_addition, execution_date=20240321T214520, start_date=20240321T214521, end_date=20240321T214522
+[2024-03-21T21:45:22.162+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-21T21:45:22.191+0000] {taskinstance.py:3280} INFO - 3 downstream tasks scheduled from follow-on schedule check

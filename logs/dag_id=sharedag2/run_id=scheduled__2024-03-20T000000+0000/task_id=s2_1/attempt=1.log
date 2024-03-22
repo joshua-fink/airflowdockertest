@@ -1,0 +1,14 @@
+[2024-03-21T21:18:39.544+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sharedag2.s2_1 scheduled__2024-03-20T00:00:00+00:00 [queued]>
+[2024-03-21T21:18:39.554+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sharedag2.s2_1 scheduled__2024-03-20T00:00:00+00:00 [queued]>
+[2024-03-21T21:18:39.555+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-03-21T21:18:39.569+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonDecoratedOperator): s2_1> on 2024-03-20 00:00:00+00:00
+[2024-03-21T21:18:39.577+0000] {standard_task_runner.py:60} INFO - Started process 97 to run task
+[2024-03-21T21:18:39.581+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'sharedag2', 's2_1', 'scheduled__2024-03-20T00:00:00+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/reuse_task_in_multiple_dags.py', '--cfg-path', '/tmp/tmp4zfj8t3s']
+[2024-03-21T21:18:39.584+0000] {standard_task_runner.py:88} INFO - Job 54: Subtask s2_1
+[2024-03-21T21:18:39.652+0000] {task_command.py:423} INFO - Running <TaskInstance: sharedag2.s2_1 scheduled__2024-03-20T00:00:00+00:00 [running]> on host d2feb6af224b
+[2024-03-21T21:18:39.783+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sharedag2' AIRFLOW_CTX_TASK_ID='s2_1' AIRFLOW_CTX_EXECUTION_DATE='2024-03-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-20T00:00:00+00:00'
+[2024-03-21T21:18:39.787+0000] {logging_mixin.py:188} INFO - Task args: x=3, y=1
+[2024-03-21T21:18:39.788+0000] {python.py:201} INFO - Done. Returned value was: 4
+[2024-03-21T21:18:39.821+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=sharedag2, task_id=s2_1, execution_date=20240320T000000, start_date=20240321T211839, end_date=20240321T211839
+[2024-03-21T21:18:39.874+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-21T21:18:39.904+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

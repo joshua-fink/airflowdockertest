@@ -1,0 +1,34 @@
+[2024-03-22T00:14:49.667+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: testing_virtualenvs.print_python_fact manual__2024-03-22T00:14:48.248393+00:00 [queued]>
+[2024-03-22T00:14:49.673+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: testing_virtualenvs.print_python_fact manual__2024-03-22T00:14:48.248393+00:00 [queued]>
+[2024-03-22T00:14:49.674+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-03-22T00:14:49.683+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonVirtualenvDecoratedOperator): print_python_fact> on 2024-03-22 00:14:48.248393+00:00
+[2024-03-22T00:14:49.688+0000] {standard_task_runner.py:60} INFO - Started process 77 to run task
+[2024-03-22T00:14:49.690+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'testing_virtualenvs', 'print_python_fact', 'manual__2024-03-22T00:14:48.248393+00:00', '--job-id', '104', '--raw', '--subdir', 'DAGS_FOLDER/testing_virtualenvs.py', '--cfg-path', '/tmp/tmpt9j0bwh5']
+[2024-03-22T00:14:49.692+0000] {standard_task_runner.py:88} INFO - Job 104: Subtask print_python_fact
+[2024-03-22T00:14:49.727+0000] {task_command.py:423} INFO - Running <TaskInstance: testing_virtualenvs.print_python_fact manual__2024-03-22T00:14:48.248393+00:00 [running]> on host 4b8b907c2725
+[2024-03-22T00:14:49.782+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='testing_virtualenvs' AIRFLOW_CTX_TASK_ID='print_python_fact' AIRFLOW_CTX_EXECUTION_DATE='2024-03-22T00:14:48.248393+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-22T00:14:48.248393+00:00'
+[2024-03-22T00:14:49.785+0000] {process_utils.py:182} INFO - Executing cmd: /usr/local/bin/python -m virtualenv /tmp/venvywagwplh --system-site-packages --python=python
+[2024-03-22T00:14:49.792+0000] {process_utils.py:186} INFO - Output:
+[2024-03-22T00:14:50.247+0000] {process_utils.py:190} INFO - created virtual environment CPython3.8.18.final.0-64 in 173ms
+[2024-03-22T00:14:50.248+0000] {process_utils.py:190} INFO -   creator CPython3Posix(dest=/tmp/venvywagwplh, clear=False, no_vcs_ignore=False, global=True)
+[2024-03-22T00:14:50.248+0000] {process_utils.py:190} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/***/.local/share/virtualenv)
+[2024-03-22T00:14:50.249+0000] {process_utils.py:190} INFO -     added seed packages: pip==23.3.1, setuptools==69.0.2, wheel==0.42.0
+[2024-03-22T00:14:50.249+0000] {process_utils.py:190} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2024-03-22T00:14:50.270+0000] {process_utils.py:182} INFO - Executing cmd: /tmp/venvywagwplh/bin/pip install -r /tmp/venvywagwplh/requirements.txt
+[2024-03-22T00:14:50.277+0000] {process_utils.py:186} INFO - Output:
+[2024-03-22T00:14:51.262+0000] {process_utils.py:190} INFO - Collecting randfacts==0.21.0 (from -r /tmp/venvywagwplh/requirements.txt (line 1))
+[2024-03-22T00:14:51.267+0000] {process_utils.py:190} INFO -   Using cached randfacts-0.21.0-py3-none-any.whl.metadata (4.5 kB)
+[2024-03-22T00:14:51.274+0000] {process_utils.py:190} INFO - Using cached randfacts-0.21.0-py3-none-any.whl (273 kB)
+[2024-03-22T00:14:53.818+0000] {process_utils.py:190} INFO - Installing collected packages: randfacts
+[2024-03-22T00:14:53.836+0000] {process_utils.py:190} INFO - Successfully installed randfacts-0.21.0
+[2024-03-22T00:14:54.128+0000] {process_utils.py:190} INFO - 
+[2024-03-22T00:14:54.128+0000] {process_utils.py:190} INFO - [notice] A new release of pip is available: 23.3.1 -> 24.0
+[2024-03-22T00:14:54.129+0000] {process_utils.py:190} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2024-03-22T00:14:54.276+0000] {process_utils.py:182} INFO - Executing cmd: /tmp/venvywagwplh/bin/python /tmp/venv-callz0zksrz5/script.py /tmp/venv-callz0zksrz5/script.in /tmp/venv-callz0zksrz5/script.out /tmp/venv-callz0zksrz5/string_args.txt /tmp/venv-callz0zksrz5/termination.log
+[2024-03-22T00:14:54.283+0000] {process_utils.py:186} INFO - Output:
+[2024-03-22T00:14:55.361+0000] {process_utils.py:190} INFO - Orcas are not whales at all, they are actually a type of dolphin.
+[2024-03-22T00:14:55.362+0000] {process_utils.py:190} INFO - There are over 1,800 known species of fleas
+[2024-03-22T00:14:55.524+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-22T00:14:55.536+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=testing_virtualenvs, task_id=print_python_fact, execution_date=20240322T001448, start_date=20240322T001449, end_date=20240322T001455
+[2024-03-22T00:14:55.560+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-22T00:14:55.577+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

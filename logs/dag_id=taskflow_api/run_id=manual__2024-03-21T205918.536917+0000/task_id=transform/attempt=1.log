@@ -1,0 +1,13 @@
+[2024-03-21T20:59:23.148+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: taskflow_api.transform manual__2024-03-21T20:59:18.536917+00:00 [queued]>
+[2024-03-21T20:59:23.154+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: taskflow_api.transform manual__2024-03-21T20:59:18.536917+00:00 [queued]>
+[2024-03-21T20:59:23.155+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-03-21T20:59:23.165+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonDecoratedOperator): transform> on 2024-03-21 20:59:18.536917+00:00
+[2024-03-21T20:59:23.170+0000] {standard_task_runner.py:60} INFO - Started process 72 to run task
+[2024-03-21T20:59:23.172+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'taskflow_api', 'transform', 'manual__2024-03-21T20:59:18.536917+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/taskflow_api.py', '--cfg-path', '/tmp/tmptrihnccg']
+[2024-03-21T20:59:23.175+0000] {standard_task_runner.py:88} INFO - Job 42: Subtask transform
+[2024-03-21T20:59:23.214+0000] {task_command.py:423} INFO - Running <TaskInstance: taskflow_api.transform manual__2024-03-21T20:59:18.536917+00:00 [running]> on host d2feb6af224b
+[2024-03-21T20:59:23.278+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='taskflow_api' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-03-21T20:59:18.536917+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-21T20:59:18.536917+00:00'
+[2024-03-21T20:59:23.280+0000] {python.py:201} INFO - Done. Returned value was: {'total_order_value': 301.27}
+[2024-03-21T20:59:23.303+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=taskflow_api, task_id=transform, execution_date=20240321T205918, start_date=20240321T205923, end_date=20240321T205923
+[2024-03-21T20:59:23.345+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-21T20:59:23.368+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
