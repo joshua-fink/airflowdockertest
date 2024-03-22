@@ -19,7 +19,7 @@ By Joshua Fink (joshuafink@geico.com)
 ### Current Difficulties
 
 <ul>
-  <li> Tried to follow tutorial on Connections in Airflow docs to set up Calendarific API via Airflow UI. Then tried running in via 'dags/test_calendarific.py'. A bit confused on how to properly set it up. Theory is permissions of account in Docker Container may not be configured properly. </li>
+  <li> Tried to follow tutorial on Connections to set up Calendarific API via Airflow UI, got confused. Then tried running in via 'dags/test_calendarific.py'. A bit confused on how to properly set it up. Theory is permissions of account in Docker Container may not be configured properly. </li>
   <li> Currently, 'dags/test_calendarific.py' runs a test using 'HttpSensor()' operator to test if connection is active. DAG fails instead :( </li>
 </ul>
 
